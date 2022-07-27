@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Puliyasseri</title>
+</head>
+<style>
+    #screen{
+        border: solid 10px;
+        width: 500px;
+        height: 600px;
+        background-color: aquamarine;
+    }
+
+</style>
+<body>
+    <h2 id="demo"></h2>
+    <div id="screen">
+        
+
+    </div>
+    <button onclick="color('red')">Red</button>
+    <button onclick="color('blue')">Blue</button>
+    <button onclick="color('green')">Green</button>
+    <button onclick="color('yellow')">Yellow</button>
+
+
+    <script>
+        function show() {
+        
+            var a =1;
+            var b = 2;
+            var sum = a+b;
+            console.log("Sum ="+ sum) 
+
+            var c= 4;
+            var c = 6;
+            console.log(c)
+            let d  = 7;
+             d = 8;
+             console.log(d)
+             const e = 10;
+            if(e%2==0){
+                console.log("even number")
+            }else{
+                console.log("number is even")
+            }
+            for(var i = 0;i<10;i++){
+                console.log(i)
+            }
+            var arr = ['apple',12.5,true]
+            console.log(arr[1])
+            let person = [{
+                Name : "Arjun",
+                Place : "India",
+                Age : 31,
+                Sex : true,
+                Height : 183
+            },{
+                Name : "Maria",
+                Place : "France",
+                Age : 40,
+                Sex : false,
+                Height : 173
+            }
+            ]
+            console.log(person[1].Name)
+
+        }
+
+        function display(){
+
+            var input = document.getElementById("input").value
+            document.getElementById("demo").innerHTML = input
+            if(input == "Myra"){
+                alert("You are All india Myre commite")
+            }else{
+                prompt("Mappu parayada patiii",input)
+            }
+            
+        }
+
+        function color(arg){
+            document.getElementById("screen").style.backgroundColor = arg
+        }
+    </script>
+
+</body>
+
+
+</html>
